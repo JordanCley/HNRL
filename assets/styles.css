@@ -1,9 +1,7 @@
-* {
-    background-color: #ffc107;
-}
+
 
 .navbar-brand {
-    font-size: 35px ;
+    font-size: 45px ;
 }
 
 .nav-link {
@@ -19,10 +17,6 @@
     margin: 50px auto 100px auto;
     margin-top: 6rem;
     border: solid 5px black;
-}
-
-div {
-    background-color: #ffc107;
 }
 
 
