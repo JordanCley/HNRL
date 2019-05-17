@@ -1,7 +1,43 @@
+.contactTitle {
+    text-align: center;
+}
 
+.contactImage {
+    text-align: center;
+}
 
-.navbar-brand {
-    font-size: 45px ;
+.submitBtn {
+    text-align: center;
+}
+
+#navfont1 {                     /* Navbar font coloring */
+    color: #ffc107;
+}
+
+#navfont2 {
+    color: #ffc107;
+}
+
+#navfont3 {
+    color: #ffc107;
+}
+
+#navbarDropdownMenuLink {
+    color: #ffc107;
+}
+
+#jumbo {                            /* jumbotron */
+    padding-top: 1px;
+    background-color: #C0C0C0;
+}
+
+#slide {
+    padding-top: 1px;
+    background-color: #C0C0C0;
+}
+
+#hnrl {                         /* Navbar font sizing */
+    font-size: 50px ;
 }
 
 .nav-link {
@@ -12,13 +48,17 @@
     font-size: 20px;
 }
 
-#slider {
-    width: 60rem;
-    margin: 50px auto 100px auto;
-    margin-top: 6rem;
-    border: solid 5px black;
+.jumbotron {
+    margin-top: 8rem;
 }
 
+.dcpic {                            /* About page picture */
+    border: solid 5px #606060;
+}
+
+.carousel-item {                    /* carousel border */
+    border: solid 5px #606060;
+}
 
 
 

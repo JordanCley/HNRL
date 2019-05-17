@@ -1,28 +1,40 @@
 
-<?php include('includes/header.php') ?>
+<?php
 
-<div id="slider">
-    <div id="carouselExampleFade" class="carousel carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/img/HNRL_outside.png" class="d-block w-100" alt="HONOR ROLL SKATE CREW">
-            </div>
-            <div class="carousel-item">
-                <img src="/img/HNRL_silly.png" class= "d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="/img/HNRL_street.png" class="d-block w-100" alt="...">
-            </div>
+define("TITLE", "About | Honor Roll Skate Crew");
+
+include('includes/header.php')
+
+?>
+
+<div class="jumbotron jumbotron-fluid" id="jumbo">
+    <div class="container">
+        <hr>
+        <h1 class="display-4 contactTitle">Honor Roll Skate Crew</h1>
+        <hr>
+        <p class="lead">
+            Honor Roll offers a form of entertainment like you've never seen! They have taken all the
+            elements you love about dancing and skating and <em>ROLLED</em> them into one amazing show! Lorem Ipsum
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+            to make a type specimen book.
+        </p>
+        <div class="dcpic" >
+            <img src="/img/DC.png" width="1100" height="490" alt="">
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <p class="lead">
+            Honor Roll offers a form of entertainment like you've never seen! They have taken all the
+            elements you love about dancing and skating and <em>ROLLED</em> them into one amazing show! Lorem Ipsum
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+            to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+            like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
     </div>
 </div>
+
+
 
 <?php include('includes/footer.php') ?>
