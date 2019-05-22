@@ -1,28 +1,6 @@
 <?php
 
-$crewMembers = array(
 
-    array(
-        "name" => "Jordan McQuiston",
-    ),
-
-    array(
-        "name" => "Brandon Perea",
-    ),
-
-    array(
-        "name" => "Diamond Walker",
-    ),
-
-    array(
-        "name" => "Hunter Collins",
-    ),
-
-    array(
-        "name" => "Tony Zane",
-    ),
-
-);
 
 // Navigation Menu Items
 
@@ -56,6 +34,30 @@ $navItems = array(
         "class" => "nav-item dropdown"
     ),
 
+
+);
+
+$crewMembers = array(
+
+    array(
+        "name" => "Jordan McQuiston",
+    ),
+
+    array(
+        "name" => "Brandon Perea",
+    ),
+
+    array(
+        "name" => "Diamond Walker",
+    ),
+
+    array(
+        "name" => "Hunter Collins",
+    ),
+
+    array(
+        "name" => "Tony Zane",
+    ),
 
 );
 
