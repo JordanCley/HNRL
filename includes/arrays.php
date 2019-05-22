@@ -1,84 +1,63 @@
 <?php
 
-// Navigation Menu Items
-
-$images = array(
-
-    array(
-        "img"	=> "DC",
-    ),
-
-    array(
-        "img"	=> "",
-    ),
-
-    array(
-        "slug"	=> "menu.php",
-        "title"	=> "Menu"
-    ),
-
-    array(
-        "slug"	=> "contact.php",
-        "title"	=> "Contact"
-    ),
-
-);
-
-
-// Team Members
-
 $crewMembers = array(
 
     array(
-
-        "firstName"		=> "Jordan",
-        "lastName"		=> "McQuiston",
-        "age"		    =>  34,
-        "bio"			=> "blahh blahh",
-        "img"			=> "test"
-
+        "name" => "Jordan McQuiston",
     ),
 
     array(
-
-        "firstName"		=> "Jordan",
-        "lastName"		=> "McQuiston",
-        "age"		    =>  34,
-        "bio"			=> "blahh blahh",
-        "img"			=> "test"
-
+        "name" => "Brandon Perea",
     ),
 
     array(
-
-        "firstName"		=> "Jordan",
-        "lastName"		=> "McQuiston",
-        "age"		    =>  34,
-        "bio"			=> "blahh blahh",
-        "img"			=> "test"
-
+        "name" => "Diamond Walker",
     ),
 
     array(
-
-        "firstName"		=> "Jordan",
-        "lastName"		=> "McQuiston",
-        "age"		    =>  34,
-        "bio"			=> "blahh blahh",
-        "img"			=> "test"
-
+        "name" => "Hunter Collins",
     ),
 
     array(
-
-        "firstName"		=> "Jordan",
-        "lastName"		=> "McQuiston",
-        "age"		    =>  34,
-        "bio"			=> "blahh blahh",
-        "img"			=> "test"
-
-    )
+        "name" => "Tony Zane",
+    ),
 
 );
+
+// Navigation Menu Items
+
+$navItems = array(
+
+    array(
+        "slug"	=> "index.php",
+        "title"	=> "Home",
+        "id"    => "navfont1",
+        "class" => "nav-item navbar-toggle"
+    ),
+
+    array(
+        "slug"	=> "about.php",
+        "title"	=> "About",
+        "id"    => "navfont2",
+        "class" => "nav-item"
+    ),
+
+    array(
+        "slug"	=> "videos.php",
+        "title"	=> "Videos",
+        "id"    => "navfont3",
+        "class" => "nav-item"
+    ),
+
+    array(
+        "slug"	=> "#",
+        "title"	=> "The Crew",
+        "id"    => "navbarDropdownMenuLink",
+        "class" => "nav-item dropdown"
+    ),
+
+
+);
+
 
 ?>

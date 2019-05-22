@@ -1,3 +1,9 @@
+<?php
+
+include('includes/arrays.php');
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -26,28 +32,36 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item navbar-toggle">
-                        <a class="nav-link" id="navfont1" href="/index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="navfont2" href="/about.php">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="navfont3" href="/videos.php">Videos</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            The Crew
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/crew.php">Brandon Perea</a>
-                            <a class="dropdown-item" href="/crew.php">Diamond Walker</a>
-                            <a class="dropdown-item" href="/crew.php">Hunter Collins</a>
-                            <a class="dropdown-item" href="/crew.php">Jordan McQuiston</a>
-                            <a class="dropdown-item" href="/crew.php">Tony Zane</a>
-                        </div>
-                    </li>
+                    <?php
+                    foreach ($navItems as $item) {
+                        if("$item[title]" == "The Crew"){
+                            echo "<li class='$item[class]'>
+                                    <a class='nav-link dropdown-toggle' id='$item[id]' href=\"$item[slug]\" 
+                                        role='button'  data-toggle='dropdown' aria-haspopup='true' 
+                                        aria-expanded='false'>
+                                        $item[title]
+                                    </a>
+                                
+                               
+                                <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
+                                
+                                    <a class='dropdown-item' href='/crew.php'>$crewMembers[name]</a>
+                                    <a class='dropdown-item' href='/crew.php'>Diamond Walker</a>
+                                    <a class='dropdown-item' href='/crew.php'>Hunter Collins</a>
+                                    <a class='dropdown-item' href='/crew.php'>Jordan McQuiston</a>
+                                    <a class='dropdown-item' href='/crew.php'>Tony Zane</a>
+                                </div>
+                        
+                                </li>";
+                        } else {
+                            echo "<li class='$item[class]'>
+                                <a class='nav-link' id='$item[id]' href=\"$item[slug]\">
+                                    $item[title]
+                                </a>
+                              </li>";
+                        }
+                    }
+                    ?>
                 </ul>
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
