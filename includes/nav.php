@@ -10,39 +10,38 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <?php
-                    foreach ($navItems as $item) {
-                        if("$item[title]" === "The Crew"){
-                            echo "<li class='$item[class]'>
-                                            <a class='nav-link dropdown-toggle' id='$item[id]' href=\"$item[slug]\" 
-                                                role='button'  data-toggle='dropdown' aria-haspopup='true' 
-                                                aria-expanded='false'>
-                                                
-                                                $item[title]
-                                                
-                                            </a>
-                                        
-                                       
-                                            <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-                                                <a class='dropdown-item' href='/crew.php'>Brandon Perea</a>
-                                                <a class='dropdown-item' href='/crew.php'>Diamond Walker</a>
-                                                <a class='dropdown-item' href='/crew.php'>Hunter Collins</a>
-                                                <a class='dropdown-item' href='/crew.php'>Jordan McQuiston</a>
-                                                <a class='dropdown-item' href='/crew.php'>Tony Zane</a>
-                                            </div>
-                                
-                                         </li>";
-                        } else {
-                            echo "<li class='$item[class]'>
-                                     <a class='nav-link' id='$item[id]' href=\"$item[slug]\">
-                                                
-                                       $item[title]
-                                                    
-                                     </a>
-                                  </li>";
-                        }
-                    }
+                <?php foreach ($navItems as $item) {
+                    if($item['title'] === "The Crew"){
                 ?>
+                        <li class="<?php echo $item['class']; ?>">
+                            <a class="nav-link dropdown-toggle"
+                                id="<?php echo $item['id']; ?>"
+                                href="<?php echo $item['slug']; ?>"
+                                role='button'
+                                data-toggle='dropdown'
+                                aria-haspopup='true'
+                                aria-expanded='false'
+                            >
+                                <?php echo $item['title']; ?>
+                            </a>
+
+                            <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
+                                <?php foreach ($crewMembers as $crewMember) { ?>
+                                    <a class="dropdown-item" href="/crew.php?id=<?php echo $crewMember['id']; ?>">
+                                        <?php echo $crewMember['name']; ?>
+                                   </a>
+                                <?php } ?>
+                            </div>
+                        </li>
+                <?php } else { ?>
+                    <li class="<?php echo $item['class']; ?>">
+                        <a class="nav-link" id="<?php echo $item['id']?>" href="/<?php echo $item['slug']; ?>">
+                           <?php echo $item['title']; ?>
+                        </a>
+                    </li>
+                <?php
+                    }
+                } ?>
             </ul>
 
             <ul class="nav justify-content-end">
