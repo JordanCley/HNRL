@@ -19,8 +19,8 @@ include('includes/header.php')
             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
             to make a type specimen book.
         </p>
-        <div class="dcpic" >
-            <img src="/img/DC.png" width="1100" height="490" alt="">
+        <div>
+            <img class="dcpic" src="/img/Virginia.png" style="width: 69.5rem;" alt="">
         </div>
         <p class="lead">
             Honor Roll offers a form of entertainment like you've never seen! They have taken all the

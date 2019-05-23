@@ -38,7 +38,7 @@ include('includes/header.php')
             </div>
             <hr>
             <div class="contactImage">
-                <img src="/img/HNRL_logo.png" width="400" height="200" alt="">
+                <img src="/img/Logo.png" style="width: 20rem;" alt="HNRL">
             </div>
         </form>
     </div>

@@ -20,21 +20,21 @@ include('includes/header.php')
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/img/HNRL_silly.png" class="d-block w-100" height="700px" width="600px" alt="...">
+                            <img src="/img/Outside.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
                                 <p>blah blah blah</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/HNRL_outside.png" class="d-block w-100" height="700px" width="600px" alt="...">
+                            <img src="/img/Raceway.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Second slide label</h5>
                                 <p>blah blah blah</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/NASCAR.png" class="d-block w-100" height="700px" width="600px" alt="...">
+                            <img src="/img/Xgames.png" class="d-block w-100"  alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Third slide label</h5>
                                 <p>blah blah blah</p>
