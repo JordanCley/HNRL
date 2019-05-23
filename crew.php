@@ -12,7 +12,7 @@
 ?>
 
 <div class="jumbotron jumbotron-fluid" id="jumbo">
-    <div class="card container" id="crew-card" style="width: 30em;">
+    <div class="card container d-block w-50" id="crew-card" >
         <hr>
             <img src="/img/<?php echo $crewMember['img']; ?>.png" class="card-img-top" alt="<?php echo $crewMember['name']; ?>">
             <hr>
