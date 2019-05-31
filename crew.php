@@ -4,7 +4,12 @@
 
     include('includes/header.php');
 
-    $queryArgumentId = $_GET['id'];
+    function strip_bad_chars( $input ) {
+        $output = preg_replace( "/[^a-zA-Z0-9_-]/", "",$input);
+        return $output;
+    }
+
+    $queryArgumentId = strip_bad_chars($_GET['id']);
 
     $arrayIndexOfCrewMember = $queryArgumentId - 1;
 
