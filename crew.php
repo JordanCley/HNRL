@@ -26,8 +26,7 @@
                 <p class="card-text"><?php echo $crewMember['bio']; ?></p>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><?php echo $crewMember['age']; ?></li>
-                <li class="list-group-item"><?php echo $crewMember['age']; ?></li>
+                <li class="list-group-item">Age: <?php echo $crewMember['age']; ?></li>
                 <li class="list-group-item"><?php echo $crewMember['other']; ?></li>
             </ul>
             <div class="card-body">

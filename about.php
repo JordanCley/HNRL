@@ -3,7 +3,7 @@
 
 define("TITLE", "About | Honor Roll Skate Crew");
 
-include('includes/header.php')
+include('includes/header.php');
 
 ?>
 
@@ -12,6 +12,38 @@ include('includes/header.php')
         <hr>
         <h1 class="display-4 contactTitle">Honor Roll Skate Crew</h1>
         <hr>
+
+        <?php
+
+        $query = 'SELECT u.id AS user_id, u.email_address, u.password, r.role_name FROM users u LEFT JOIN roles r ON (u.role_id = r.id)';
+
+        $link = mysqli_connect("127.0.0.1", "root", "password", "jordan");
+
+        $result = mysqli_query($link, $query);
+
+        echo '<table>';
+
+            while ($row = $result->fetch_assoc()) {
+                echo '<tr>';
+                    echo '<td>';
+                        echo $row['user_id'];
+                    echo '</td>';
+                    echo '<td>';
+                        echo $row['email_address'];
+                    echo '</td>';
+                    echo '<td>';
+                        echo $row['password'];
+                    echo '</td>';
+                    echo '<td>';
+                        echo $row['role_name'];
+                    echo '</td>';
+                echo '</tr>';
+            }
+
+        echo '</table>';
+
+        ?>
+
         <p class="lead">
             Honor Roll offers a form of entertainment like you've never seen! They have taken all the
             elements you love about dancing and skating and <em>ROLLED</em> them into one amazing show! Lorem Ipsum
